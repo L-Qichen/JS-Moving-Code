@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#html{
+  color: #6A5ACD;
+  word-break: break-all;
+}
+
+#container{
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  transform: translate(-50%);
+}
+
+#container::before {
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#container::after {
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media (max-width: 500px) {
+  #html{
+    height: 50vh;
+    overflow: auto;
+  }
+  #container-wrapper{
+    height: 50vh;
+    position: relative;
+  }
+  #container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
