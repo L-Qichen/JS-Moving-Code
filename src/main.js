@@ -69,6 +69,10 @@ let printContent = ()=>{
         top: 99999,
         behavior: "smooth"
     });
+      html.scrollTo({
+        top: 99999,
+        behavior: "smooth"
+    });
     }, 100);
   }else{
     return;
